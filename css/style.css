@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #2ee0ed;
-    --second-bg-color: #3dc4d9;
-    --text-color: #343131;
-    --main-color: rgb(51, 121, 137);
+    --bg-color: rgb(87, 149, 87);
+    --second-bg-color: rgb(53, 109, 53);
+    --text-color: white;
+    --main-color: #D4E157;
 }
 
 html {
@@ -51,6 +51,15 @@ section {
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
+}
+
+.logo-img {
+    font-weight: 500;
+    font-size: 30px;
+    width: 100px; /* Adjust the width according to your preference */
+    height: auto; /* Keeps the aspect ratio */
+    display: flex;
+    justify-content: flex-start; /* Aligns logo to the left */
 }
 
 .navbar a {
@@ -284,43 +293,4 @@ span {
 .footer-text p {
     font-size: 1.6rem;
     text-align: center;
-}
-
-.footer-iconTop a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem;
-    background: var(--main-color);
-    border: .2rem solid var(--main-color);
-    border-radius: .6rem;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.footer-iconTop a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--second-bg-color);
-    z-index: -1;
-    transition: .5s;
-}
-
-.footer-iconTop a:hover::before {
-    width: 100%;
-}
-
-.footer-iconTop a i {
-    font-size: 2.4rem;
-    color: var(--bg-color);
-    transition: .5s;
-}
-
-.footer-iconTop a:hover i {
-    color: var(--main-color);
 }
